@@ -90,6 +90,12 @@ def test_filters_narrow_the_catalog(corpus: Corpus) -> None:
         taste & security
     )
     assert corpus.list_smells(language="ruby")["count"] == 0
+    assert corpus.list_smells(language="rust")["count"] > 0
+    assert corpus.list_smells(language="python")["count"] > 0
+    assert (
+        corpus.list_smells(language="rust")["count"] + corpus.list_smells(language="python")["count"]
+        == len(smells)
+    )
 
 
 def test_version_filter_excludes_smells_that_do_not_apply(corpus: Corpus) -> None:
@@ -98,6 +104,15 @@ def test_version_filter_excludes_smells_that_do_not_apply(corpus: Corpus) -> Non
     ids_312 = {smell["id"] for smell in corpus.list_smells(python_version="3.12")["smells"]}
     assert "naive-datetime-for-instants" not in ids_31
     assert "naive-datetime-for-instants" in ids_312
+
+
+def test_rust_version_filter_uses_the_rust_range(corpus: Corpus) -> None:
+    """trim-matches-used-to-remove-one-suffix is >=1.45, since strip_suffix landed in 1.45."""
+    old = corpus.list_smells(rust_version="1.44")["smells"]
+    new = corpus.list_smells(rust_version="1.80")["smells"]
+    assert "trim-matches-used-to-remove-one-suffix" not in {smell["id"] for smell in old}
+    assert "trim-matches-used-to-remove-one-suffix" in {smell["id"] for smell in new}
+    assert {smell["language"] for smell in new} == {"rust"}
 
 
 def test_both_version_filters_keep_both_languages(corpus: Corpus) -> None:
