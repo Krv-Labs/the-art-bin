@@ -22,7 +22,8 @@
         "idx",
         "num_",
         "ret ="
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "action-invoked-with-no-record-of-it",
@@ -43,7 +44,8 @@
         "doc.text =",
         "nothing to undo",
         "self.status("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "algorithm-chosen-by-flag-inside-the-class",
@@ -64,7 +66,8 @@
         "elif self.mode",
         "def __init__(self, mode",
         "mode="
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "algorithm-skeleton-duplicated-per-variant",
@@ -85,7 +88,8 @@
         "log.info(",
         "for record in",
         "return len("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "any-annotation-as-placeholder",
@@ -103,7 +107,8 @@
         "-> Any",
         "from typing import Any",
         "Dict[str, Any]"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "argument-mutated-in-place",
@@ -122,7 +127,8 @@
         ".append(",
         "return rows",
         "enumerate"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "array-concatenated-in-a-loop",
@@ -142,7 +148,8 @@
         "np.append",
         "torch.empty(0",
         "out = torch.cat"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "array-view-mutated-as-if-copy",
@@ -163,7 +170,8 @@
         ".copy()",
         "signal[",
         "np.ndarray"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "assert-for-runtime-validation",
@@ -180,7 +188,8 @@
         "assert not",
         "-O",
         "AssertionError"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "bare-except-pass",
@@ -197,7 +206,8 @@
         "except Exception",
         "pass",
         "try"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "base-class-names-its-concrete-product",
@@ -218,7 +228,8 @@
         "Writer(",
         "super().",
         "= CsvWriter("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "blocking-call-in-async-function",
@@ -237,7 +248,8 @@
         "time.sleep",
         "await",
         "run_in_executor"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "boolean-parameter-selects-behaviour",
@@ -255,7 +267,8 @@
         "if flag:",
         "as_csv",
         "def export"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "broad-except-before-specific",
@@ -273,7 +286,8 @@
         "except ValueError:",
         "try:",
         "except OSError"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "broad-exception-asserted-in-test",
@@ -291,7 +305,8 @@
         "assertRaises(Exception)",
         "with pytest.raises",
         "match="
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "builtin-name-shadowed",
@@ -311,7 +326,8 @@
         "type =",
         "input =",
         "str ="
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "caching-repeated-around-every-call",
@@ -332,7 +348,8 @@
         "json.dumps",
         "if hit is not None",
         "f\"user:{"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "components-wired-to-each-other-directly",
@@ -353,7 +370,8 @@
         ".on_submit(",
         "self._history",
         "widget"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "constructor-does-io",
@@ -373,7 +391,8 @@
         "torch.load",
         "requests.get",
         ".glob("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "copy-written-field-by-field",
@@ -394,7 +413,8 @@
         "= base.",
         "replace(",
         "vars(self)"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "dict-get-with-mutable-fallback",
@@ -413,7 +433,8 @@
         ").append(",
         "setdefault",
         "defaultdict"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "eager-f-string-in-log-call",
@@ -432,7 +453,8 @@
         "logger.error(f",
         "%s",
         "{loss:.4f}"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "equality-chain-instead-of-lookup-table",
@@ -452,7 +474,8 @@
         "elif clf_name ==",
         "data = None",
         "else:"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "exception-logged-as-string",
@@ -471,7 +494,8 @@
         "logger.error",
         "except",
         "{e}"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "float-equality-comparison",
@@ -491,7 +515,8 @@
         "math.isclose",
         "np.allclose",
         "sum("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "foreign-payload-reshaped-at-every-call-site",
@@ -512,7 +537,8 @@
         "raw[",
         "payload[",
         "response.json()["
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "function-call-as-default-argument",
@@ -531,7 +557,8 @@
         "=dict()",
         "def ",
         "=time.time()"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "generator-consumed-twice",
@@ -551,7 +578,8 @@
         "sum(",
         "max(",
         "zip("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "getter-setter-wrapping-plain-attribute",
@@ -570,7 +598,8 @@
         "self._name",
         "return self._",
         "def get_name"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "global-statement-for-shared-state",
@@ -589,7 +618,8 @@
         "is None:",
         "_MODEL",
         "= None"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "half-built-object-passed-around",
@@ -610,7 +640,8 @@
         ".rows =",
         "obj = ",
         "setattr("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "hardcoded-cuda-device",
@@ -629,7 +660,8 @@
         "cuda:0",
         "torch.device",
         ".to(device)"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "identical-value-copied-into-every-instance",
@@ -650,7 +682,8 @@
         "copy(",
         "def __init__(self, x, y",
         "[Particle("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "internal-collection-returned-for-iteration",
@@ -671,7 +704,8 @@
         ".extend(",
         "for x in obj.items()",
         "self._"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "isinstance-chain-instead-of-dispatch",
@@ -689,7 +723,8 @@
         "elif isinstance",
         "raise TypeError",
         "if isinstance(shape"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "kwargs-forwarded-through-layers",
@@ -707,7 +742,8 @@
         "**config",
         "def train(**",
         "(**kwargs)"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "lambda-bound-to-a-name",
@@ -724,7 +760,8 @@
         "= lambda",
         "= lambda x:",
         "normalise = lambda"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "late-binding-closure-in-loop",
@@ -743,7 +780,8 @@
         ".append(lambda",
         "def inner",
         "functools.partial"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "leaf-and-branch-handled-by-the-caller",
@@ -764,7 +802,8 @@
         "hasattr(",
         "isinstance(child, list)",
         "recursion"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "length-checked-instead-of-truthiness",
@@ -783,7 +822,8 @@
         "== 0",
         "if len(rows)",
         "!= 0"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "list-mutated-while-iterating",
@@ -802,7 +842,8 @@
         "for row in rows",
         ".pop(",
         "for item in items"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "lru-cache-on-instance-method",
@@ -821,7 +862,8 @@
         "@cache",
         "def read(self",
         "cached_property"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "model-evaluated-in-train-mode",
@@ -841,7 +883,8 @@
         "torch.no_grad",
         "with torch.inference_mode",
         "def accuracy"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "module-level-side-effect-on-import",
@@ -860,7 +903,8 @@
         "np.random.seed",
         "DEVICE =",
         "warnings.filterwarnings"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "mutable-class-attribute",
@@ -879,7 +923,8 @@
         "class",
         "self.items.append",
         "cls."
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "mutable-default-argument",
@@ -897,7 +942,8 @@
         "def",
         "default argument",
         "append"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "naive-datetime-for-instants",
@@ -915,7 +961,8 @@
         "utcnow()",
         "datetime.today()",
         "last_seen"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "name-lies-about-the-type",
@@ -933,7 +980,8 @@
         "_str",
         "_array",
         ".items()"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "open-without-encoding",
@@ -952,7 +1000,8 @@
         "\"r\")",
         ".read_text()",
         "encoding="
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "operation-added-to-every-class-in-a-hierarchy",
@@ -973,7 +1022,8 @@
         "def validate(self",
         "class Circle",
         "def accept("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "optional-behaviour-stacked-as-flags",
@@ -994,7 +1044,8 @@
         "if log:",
         "if cache",
         "=False,"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "optional-dependency-import-swallowed",
@@ -1013,7 +1064,8 @@
         "import matplotlib",
         "pass",
         "NameError"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "path-built-by-string-concatenation",
@@ -1032,7 +1084,8 @@
         "os.path.join",
         "+ \".pt\"",
         "f\"{root}/{name}\""
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "pickle-loaded-from-untrusted-file",
@@ -1052,7 +1105,8 @@
         "joblib.load",
         "allow_pickle=True",
         "weights_only"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "print-used-as-logging",
@@ -1070,7 +1124,8 @@
         "print(\"step\"",
         "print(f",
         "flush=True"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "processing-steps-nailed-into-one-function",
@@ -1091,7 +1146,8 @@
         "rate_limited(",
         "return None",
         "early return"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "product-family-selected-part-by-part",
@@ -1112,7 +1168,8 @@
         "= S3",
         "= Gcs",
         "os.environ["
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "raise-without-from-in-except",
@@ -1131,7 +1188,8 @@
         "from exc",
         "as exc",
         "During handling"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "range-len-for-index",
@@ -1149,7 +1207,8 @@
         "for i in range(len",
         "[i]",
         "[index]"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "shallow-copy-of-nested-data",
@@ -1168,7 +1227,8 @@
         "copy.copy",
         "[:]",
         ".update("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "shape-relied-on-broadcasting",
@@ -1188,7 +1248,8 @@
         "reshape(-1",
         "(n, 1)",
         "predictions - targets"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "shared-resource-reconstructed-per-caller",
@@ -1209,7 +1270,8 @@
         "def __init__(self)",
         "requests.get",
         "load_config()"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "shell-command-from-interpolated-string",
@@ -1228,7 +1290,8 @@
         "subprocess.run(f",
         "os.popen(",
         "check=True"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "single-letter-name-for-domain-value",
@@ -1248,7 +1311,8 @@
         "d =",
         "p =",
         "t ="
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "sleep-to-await-a-condition",
@@ -1266,7 +1330,8 @@
         "sleep(",
         "asyncio.sleep",
         "await asyncio.sleep"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "sql-built-by-string-concatenation",
@@ -1287,7 +1352,8 @@
         "f\"SELECT",
         "% (",
         ".format("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "state-machine-encoded-in-boolean-flags",
@@ -1308,7 +1374,8 @@
         "self.is_",
         "= True",
         "if self.is_"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "string-concatenation-in-a-loop",
@@ -1325,7 +1392,8 @@
         "out = \"\"",
         "result = ''",
         "for row in"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "stringly-typed-mode-parameter",
@@ -1344,7 +1412,8 @@
         "split=",
         "mode=",
         "raise ValueError"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "strip-used-to-remove-a-suffix",
@@ -1363,7 +1432,8 @@
         ".rstrip(",
         ".strip(\".txt\")",
         "removesuffix"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "subclass-per-combination-of-two-axes",
@@ -1384,7 +1454,8 @@
         "(Notifier)",
         "super().send",
         "class "
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "subject-calls-its-listeners-by-name",
@@ -1405,7 +1476,8 @@
         "notify_",
         "self.status =",
         "def pay(self)"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "subsystem-wired-up-at-every-call-site",
@@ -1428,7 +1500,8 @@
         "= Mailer(",
         "boto3.client",
         "Session("
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "super-init-not-called",
@@ -1447,7 +1520,8 @@
         "nn.Module",
         "class ",
         "self.layer ="
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "sys-path-mutated-to-find-modules",
@@ -1465,7 +1539,8 @@
         "sys.path.insert",
         "os.path.dirname(__file__)",
         "../src"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "tensor-accumulated-with-graph-attached",
@@ -1485,7 +1560,8 @@
         ".detach()",
         ".item()",
         "loss.backward()"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "try-block-too-wide",
@@ -1504,7 +1580,8 @@
         "except KeyError",
         "return None",
         "json.loads"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "type-compared-with-equality",
@@ -1523,7 +1600,8 @@
         ") == list",
         ") is str",
         "type(value)"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "undo-implemented-by-restoring-fields",
@@ -1544,7 +1622,8 @@
         "except",
         "order.total =",
         "rollback"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "wall-clock-used-for-elapsed-time",
@@ -1563,7 +1642,8 @@
         "elapsed",
         "time.monotonic",
         "perf_counter"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "wildcard-import",
@@ -1579,7 +1659,8 @@
         "import *",
         "from os.path import *",
         "__all__"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "worker-processes-share-one-rng-seed",
@@ -1599,7 +1680,8 @@
         "DataLoader",
         "__getitem__",
         "worker_init_fn"
-      ]
+      ],
+      "language": "python"
     },
     {
       "id": "zip-without-strict",
@@ -1617,7 +1699,8 @@
         "for x, y in zip",
         "strict=True",
         "zip(inputs, targets)"
-      ]
+      ],
+      "language": "python"
     }
   ]
 }

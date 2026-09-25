@@ -26,6 +26,7 @@ def test_catalog_omits_confirm_phase_fields(corpus: Corpus) -> None:
             "topic",
             "tags",
             "keywords",
+            "language",
         }
 
 
@@ -97,6 +98,13 @@ def test_version_filter_excludes_smells_that_do_not_apply(corpus: Corpus) -> Non
     ids_312 = {smell["id"] for smell in corpus.list_smells(python_version="3.12")["smells"]}
     assert "naive-datetime-for-instants" not in ids_31
     assert "naive-datetime-for-instants" in ids_312
+
+
+def test_both_version_filters_keep_both_languages(corpus: Corpus) -> None:
+    both = corpus.list_smells(python_version="3.12", rust_version="1.80")["count"]
+    python = corpus.list_smells(python_version="3.12")["count"]
+    rust = corpus.list_smells(rust_version="1.80")["count"]
+    assert both == python + rust > 0
 
 
 def test_taxonomy_counts_sum_to_the_corpus(corpus: Corpus) -> None:
