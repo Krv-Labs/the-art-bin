@@ -63,6 +63,44 @@ def test_scaffolded_file_passes_the_validator(scaffold) -> None:
     assert record["entry"]["severity"] == "taste"
     assert record["entry"]["category"] == "readability"
     assert record["entry"]["topic"] == "naming"
+    assert record["entry"]["language"] == "python"
+
+
+def test_scaffolded_rust_file_passes_the_validator(scaffold, tmp_path) -> None:
+    """TEMPLATE.md is Python; the scaffold must carry its fences and version field across."""
+    rust_dir = tmp_path / "snippets" / "rust" / "code"
+    rust_dir.mkdir(parents=True)
+    run_new_smell(
+        "brand-new-rust-smell",
+        "--language",
+        "rust",
+        "--severity",
+        "trap",
+        "--category",
+        "correctness",
+        "--topic",
+        "exceptions",
+    )
+
+    errors = validate.Errors()
+    record = validate.check_file(
+        rust_dir / "brand-new-rust-smell.md", validate.load_taxonomy(), errors
+    )
+    assert errors.items == []
+    assert record is not None
+    assert record["entry"]["id"] == "brand-new-rust-smell"
+    assert record["entry"]["severity"] == "trap"
+    assert record["entry"]["language"] == "rust"
+    assert record["meta"]["rust"] == ">=1.0"
+    assert "python" not in record["meta"]
+
+
+def test_rust_parse_check_ignores_missing_dependencies_only() -> None:
+    """Snippets use crates we do not have; that must pass, and broken syntax must not."""
+    assert validate.rust_parse_error('#[derive(Serialize)]\nstruct A;\nasync fn f() { debug!("x"); tokio::fs::read("a").await?; }') is None
+    assert validate.rust_parse_error("let x = 1;\nlet y = x + 1;") is None
+    assert validate.rust_parse_error("let x = ;") is not None
+    assert validate.rust_parse_error("fn f( {") is not None
 
 
 def test_scaffold_keeps_the_template_body(scaffold) -> None:
