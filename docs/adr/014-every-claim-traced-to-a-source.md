@@ -39,12 +39,12 @@ used it that way. Provenance lives in the sources pages, not in frontmatter.
 
 ## Consequences
 
-- A new smell is not finished until its rows are in the sources page. The validator does not enforce this;
-  review does.
+- A new smell is not finished until its rows are in the sources page. `get_smells` serves them as each
+  record's `sources`, and the server's tests fail when an entry has none.
 - The rows are checked against the downloaded page: the anchor exists, the fragment's text is on the page, and
   the quote appears verbatim. That check is not in CI, because it needs the network and the pages change
   underneath it. Re-running it is how rot gets found.
-- Writing the pages corrected eleven entries whose claims their sources did not support.
+- Writing the pages corrected ten entries whose claims their sources did not support.
 
 ## Status
 
